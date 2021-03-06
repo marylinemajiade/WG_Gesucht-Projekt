@@ -1,0 +1,83 @@
+* {
+  margin: 0%;
+}
+.body {
+  display: flex;
+  position: relative;
+}
+
+#general {
+  flex: auto;
+  margin: 20px 0px 150px 50px;
+}
+#werbung {
+  flex-basis: 200px;
+  background-color: grey;
+  text-align: center;
+}
+#page_top {
+  padding-bottom: 2px;
+}
+ul {
+  list-style-type: none;
+}
+
+#login li {
+  display: inline-block;
+  margin-left: 300px;
+}
+
+#login {
+  margin-top: 30px;
+  float: right;
+}
+
+#page_header {
+  margin: 0px 30px 10px 30px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#login a {
+  padding: 3px;
+  text-decoration: none;
+  color: grey;
+  justify-content: space-between;
+  margin-left: 20px;
+  font: 14px Arial, sans-serif;
+  font-weight: bold;
+}
+#login a:hover {
+  text-decoration-line: underline;
+}
+
+#main-menu {
+  background: #ff8c00;
+  height: 30px;
+}
+
+#main-menu li {
+  border: none;
+}
+
+#main-menu a {
+  text-decoration: none;
+  color: white;
+  font: 14px Arial, sans-serif;
+  font-weight: bold;
+}
+#main-menu a:hover {
+  text-decoration-line: underline;
+}
+
+#page_bottom {
+  clear: both;
+}
+#content {
+  background: url(https://www.wg-gesucht.de/img/startseite/portal_004.jpg);
+  height: 500px;
+}
