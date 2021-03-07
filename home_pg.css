@@ -57,7 +57,7 @@ ul {
 
 #main-menu {
   background: #ff8c00;
-  height: 30px;
+  padding: 0.5em;
 }
 
 #main-menu li {
@@ -80,4 +80,36 @@ ul {
 #content {
   background: url(https://www.wg-gesucht.de/img/startseite/portal_004.jpg);
   height: 500px;
+}
+
+#abs_content {
+  position: absolute;
+  top: 23em;
+  left: 25em;
+  display: block;
+  background-color: #ffffff;
+  opacity: 0.6;
+  padding: 2em 2em;
+}
+
+#main2 {
+  display: flex;
+  position: relative;
+}
+#main2left {
+  flex-basis: 900px;
+  background-color: rgb(233, 188, 188);
+  text-align: center;
+}
+#main2right {
+  flex: auto;
+  margin: 20px 0px 150px 50px;
+}
+#m2right {
+  display: flex;
+}
+#m21,
+#m22,
+#m23 {
+  flex-basis: 300px;
 }
