@@ -8,7 +8,7 @@
 
 #general {
   flex: auto;
-  margin: 20px 0px 150px 50px;
+  margin: 20px 50px 150px 50px;
 }
 #werbung {
   flex-basis: 200px;
@@ -96,20 +96,39 @@ ul {
   display: flex;
   position: relative;
 }
+
 #main2left {
   flex-basis: 900px;
-  background-color: rgb(233, 188, 188);
   text-align: center;
+  margin: 20px 0px auto 50px;
 }
 #main2right {
+  margin: 20px 0px auto 50px;
   flex: auto;
-  margin: 20px 0px 150px 50px;
 }
 #m2right {
   display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
 #m21,
 #m22,
 #m23 {
-  flex-basis: 300px;
+  flex-basis: 250px;
+}
+#under_right1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+#um1 {
+  flex-basis: 905px;
+}
+
+div#general .elements {
+  display: none;
+}
+
+div#general .elements.show {
+  display: block;
 }
