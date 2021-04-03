@@ -3,6 +3,11 @@
 ?>
 
       <main>
+        <?php
+            if(isset($_SESSION["useruid"])){
+              echo "<p>Hello there" . $_SESSION["useruid"] . "</p>";
+            }
+        ?>
         <div id="content">
           <div id="abs_content">
             <h2>Europaweit mehr als 3,1 Millionen Anzeigen</h2>

@@ -1,3 +1,6 @@
+<?php
+  session_start();  //User logged in in every single page inside the website
+?>
 <!DOCTYPE html>
 <html lang="de">
   <head>
@@ -14,9 +17,17 @@
         <img src="./bilder/wg-gesucht-logo.png"/>
         <nav id="login">
           <a href="."><span class="unternehmen"> FÜR UNTERNEHMEN</span></a>
-          <a href="signup.php">REGISTRIEREN</a>
+          <?php
+            if(isset($_SESSION["useruid"])){
+              echo "<a href='profile.php'>PROFILE</a>";
+              echo "<a href='includes/logout.inc.php'>LOG OUT</a>";
+            }
+            else{ 
+              echo "<a href='signup.php'>REGISTRIEREN</a>";
+              echo "<a href='login.php'>LOGIN</a>";
 
-          <a href="login.php">LOGIN</a>
+            }
+          ?>
         </nav>
       </header>
       <div id="page_top" class="page">
